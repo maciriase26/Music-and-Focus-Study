@@ -1,0 +1,1043 @@
+Last login: Wed Dec 18 00:55:03 on ttys001
+(base) faith3@MacBookAir ~ % ls
+Applications			Public
+CLionProjects			Untitled.ipynb
+Desktop				Untitled.txt
+Documents			Zotero
+Downloads			drawing.svg
+Library				ex01-hello-cs110-maciriase26
+Movies				get-pip.py
+Music				mu_code
+Ovipostion.sav			untitled.py
+Pictures
+(base) faith3@MacBookAir ~ % conda create -n Irian1
+Retrieving notices: ...working... done
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate Irian1
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) faith3@MacBookAir ~ % conda activate Irian1
+(Irian1) faith3@MacBookAir ~ % which pip
+/Library/Frameworks/Python.framework/Versions/3.12/bin/pip
+(Irian1) faith3@MacBookAir ~ % conda install python
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+  added / updated specs:
+    - python
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2024.11.26 |       hca03da5_0         132 KB
+    expat-2.6.4                |       h313beb8_0         152 KB
+    libmpdec-4.0.0             |       h80987f9_0          69 KB
+    pip-24.2                   |  py313hca03da5_0         2.4 MB
+    python-3.13.1              |h4862095_100_cp313        13.8 MB
+    python_abi-3.13            |          0_cp313           7 KB
+    setuptools-75.1.0          |  py313hca03da5_0         1.9 MB
+    wheel-0.44.0               |  py313hca03da5_0         139 KB
+    ------------------------------------------------------------
+                                           Total:        18.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/osx-arm64::bzip2-1.0.8-h80987f9_6 
+  ca-certificates    pkgs/main/osx-arm64::ca-certificates-2024.11.26-hca03da5_0 
+  expat              pkgs/main/osx-arm64::expat-2.6.4-h313beb8_0 
+  libcxx             pkgs/main/osx-arm64::libcxx-14.0.6-h848a8c0_0 
+  libffi             pkgs/main/osx-arm64::libffi-3.4.4-hca03da5_1 
+  libmpdec           pkgs/main/osx-arm64::libmpdec-4.0.0-h80987f9_0 
+  ncurses            pkgs/main/osx-arm64::ncurses-6.4-h313beb8_0 
+  openssl            pkgs/main/osx-arm64::openssl-3.0.15-h80987f9_0 
+  pip                pkgs/main/osx-arm64::pip-24.2-py313hca03da5_0 
+  python             pkgs/main/osx-arm64::python-3.13.1-h4862095_100_cp313 
+  python_abi         pkgs/main/osx-arm64::python_abi-3.13-0_cp313 
+  readline           pkgs/main/osx-arm64::readline-8.2-h1a28f6b_0 
+  setuptools         pkgs/main/osx-arm64::setuptools-75.1.0-py313hca03da5_0 
+  sqlite             pkgs/main/osx-arm64::sqlite-3.45.3-h80987f9_0 
+  tk                 pkgs/main/osx-arm64::tk-8.6.14-h6ba3021_0 
+  tzdata             pkgs/main/noarch::tzdata-2024b-h04d1e81_0 
+  wheel              pkgs/main/osx-arm64::wheel-0.44.0-py313hca03da5_0 
+  xz                 pkgs/main/osx-arm64::xz-5.4.6-h80987f9_1 
+  zlib               pkgs/main/osx-arm64::zlib-1.2.13-h18a0788_1 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                           
+Preparing transaction: done                                                                
+Verifying transaction: done                                                                
+Executing transaction: done                                                                
+(Irian1) faith3@MacBookAir ~ % which pip
+/opt/anaconda3/envs/Irian1/bin/pip
+(Irian1) faith3@MacBookAir ~ % which pip3
+/opt/anaconda3/envs/Irian1/bin/pip3
+(Irian1) faith3@MacBookAir ~ % pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+Looking in indexes: https://download.pytorch.org/whl/nightly/cpu
+Collecting torch
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torch-2.6.0.dev20241220-cp313-none-macosx_11_0_arm64.whl (66.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.6/66.6 MB 41.5 MB/s eta 0:00:00
+Collecting torchvision
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torchvision-0.22.0.dev20241220-cp313-cp313-macosx_11_0_arm64.whl (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 94.9 MB/s eta 0:00:00
+Collecting torchaudio
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torchaudio-2.6.0.dev20241220-cp313-cp313-macosx_11_0_arm64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 38.0 MB/s eta 0:00:00
+Collecting filelock (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/filelock-3.16.1-py3-none-any.whl (16 kB)
+Collecting typing-extensions>=4.10.0 (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Collecting networkx (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/networkx-3.4.2-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 94.7 MB/s eta 0:00:00
+Collecting jinja2 (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/jinja2-3.1.4-py3-none-any.whl (133 kB)
+Collecting fsspec (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/fsspec-2024.10.0-py3-none-any.whl (179 kB)
+Requirement already satisfied: setuptools in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch) (75.1.0)
+Collecting sympy==1.13.1 (from torch)
+  Downloading https://download.pytorch.org/whl/nightly/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 50.3 MB/s eta 0:00:00
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch)
+  Downloading https://download.pytorch.org/whl/nightly/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 18.1 MB/s eta 0:00:00
+Collecting numpy (from torchvision)
+  Downloading https://download.pytorch.org/whl/nightly/numpy-2.1.2-cp313-cp313-macosx_14_0_arm64.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 55.8 MB/s eta 0:00:00
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Downloading https://download.pytorch.org/whl/nightly/pillow-11.0.0-cp313-cp313-macosx_11_0_arm64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 56.7 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Downloading https://download.pytorch.org/whl/nightly/MarkupSafe-2.1.5.tar.gz (19 kB)
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: MarkupSafe
+  Building wheel for MarkupSafe (setup.py) ... done
+  Created wheel for MarkupSafe: filename=MarkupSafe-2.1.5-cp313-cp313-macosx_11_0_arm64.whl size=14000 sha256=60f8f15649ccbca1a3335e29b77e37a74b408c537c52f3ca1b52d1a6d88bc741
+  Stored in directory: /Users/faith3/Library/Caches/pip/wheels/3a/21/87/28c44597225fd0c28d6ffa365f1c2c9dd0ab763711aa4957c6
+Successfully built MarkupSafe
+Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision, torchaudio
+Successfully installed MarkupSafe-2.1.5 filelock-3.16.1 fsspec-2024.10.0 jinja2-3.1.4 mpmath-1.3.0 networkx-3.4.2 numpy-2.1.2 pillow-11.0.0 sympy-1.13.1 torch-2.6.0.dev20241220 torchaudio-2.6.0.dev20241220 torchvision-0.22.0.dev20241220 typing-extensions-4.12.2
+(Irian1) faith3@MacBookAir ~ % import torch
+if torch.backends.mps.is_available():
+    mps_device = torch.device("mps")
+    x = torch.ones(1, device=mps_device)
+    print (x)
+else:
+    print ("MPS device not found."
+if> 
+(Irian1) faith3@MacBookAir ~ % mamba install ipython
+zsh: command not found: mamba
+(Irian1) faith3@MacBookAir ~ % conda install ipython
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+  added / updated specs:
+    - ipython
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ipython-8.30.0             |  py313hca03da5_0         1.4 MB
+    jedi-0.19.2                |  py313hca03da5_0         1.2 MB
+    matplotlib-inline-0.1.6    |  py313hca03da5_0          19 KB
+    parso-0.8.4                |  py313hca03da5_0         241 KB
+    prompt-toolkit-3.0.43      |  py313hca03da5_0         696 KB
+    pygments-2.15.1            |  py313hca03da5_1         1.8 MB
+    traitlets-5.14.3           |  py313hca03da5_0         208 KB
+    ------------------------------------------------------------
+                                           Total:         5.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  asttokens          pkgs/main/noarch::asttokens-2.0.5-pyhd3eb1b0_0 
+  decorator          pkgs/main/noarch::decorator-5.1.1-pyhd3eb1b0_0 
+  executing          pkgs/main/noarch::executing-0.8.3-pyhd3eb1b0_0 
+  ipython            pkgs/main/osx-arm64::ipython-8.30.0-py313hca03da5_0 
+  jedi               pkgs/main/osx-arm64::jedi-0.19.2-py313hca03da5_0 
+  matplotlib-inline  pkgs/main/osx-arm64::matplotlib-inline-0.1.6-py313hca03da5_0 
+  parso              pkgs/main/osx-arm64::parso-0.8.4-py313hca03da5_0 
+  pexpect            pkgs/main/noarch::pexpect-4.8.0-pyhd3eb1b0_3 
+  prompt-toolkit     pkgs/main/osx-arm64::prompt-toolkit-3.0.43-py313hca03da5_0 
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.43-hd3eb1b0_0 
+  ptyprocess         pkgs/main/noarch::ptyprocess-0.7.0-pyhd3eb1b0_2 
+  pure_eval          pkgs/main/noarch::pure_eval-0.2.2-pyhd3eb1b0_0 
+  pygments           pkgs/main/osx-arm64::pygments-2.15.1-py313hca03da5_1 
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1 
+  stack_data         pkgs/main/noarch::stack_data-0.2.0-pyhd3eb1b0_0 
+  traitlets          pkgs/main/osx-arm64::traitlets-5.14.3-py313hca03da5_0 
+  wcwidth            pkgs/main/noarch::wcwidth-0.2.5-pyhd3eb1b0_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                           
+Preparing transaction: done                                                                
+Verifying transaction: done                                                                
+Executing transaction: done                                                                
+(Irian1) faith3@MacBookAir ~ % ipython 
+Python 3.13.1 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 10:38:40) [Clang 14.0.6 ]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.30.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import torch
+   ...: if torch.backends.mps.is_available():
+   ...:     mps_device = torch.device("mps")
+   ...:     x = torch.ones(1, device=mps_device)
+   ...:     print (x)
+   ...: else:
+   ...:     print ("MPS device not found.")
+   ...: 
+tensor([1.], device='mps:0')
+
+In [2]:                                                                                    
+Do you really want to exit ([y]/n)? y
+(Irian1) faith3@MacBookAir ~ % cd..
+zsh: command not found: cd..
+(Irian1) faith3@MacBookAir ~ % cd ..
+(Irian1) faith3@MacBookAir /Users % cd 
+(Irian1) faith3@MacBookAir ~ % cd /Users/faith3/Desktop/DATA1/Irian1/ComfyUI 
+(Irian1) faith3@MacBookAir ComfyUI % pip intall -r
+ERROR: unknown command "intall" - maybe you meant "install"
+(Irian1) faith3@MacBookAir ComfyUI % pip install -r
+
+Usage:   
+  pip install [options] <requirement specifier> [package-index-options] ...
+  pip install [options] -r <requirements file> [package-index-options] ...
+  pip install [options] [-e] <vcs project url> ...
+  pip install [options] [-e] <local project path> ...
+  pip install [options] <archive url/path> ...
+
+-r option requires 1 argument
+(Irian1) faith3@MacBookAir ComfyUI % pip install -r requirements.txt 
+Requirement already satisfied: torch in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from -r requirements.txt (line 1)) (2.6.0.dev20241220)
+Collecting torchsde (from -r requirements.txt (line 2))
+  Downloading torchsde-0.2.6-py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: torchvision in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from -r requirements.txt (line 3)) (0.22.0.dev20241220)
+Requirement already satisfied: torchaudio in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from -r requirements.txt (line 4)) (2.6.0.dev20241220)
+Collecting einops (from -r requirements.txt (line 5))
+  Downloading einops-0.8.0-py3-none-any.whl.metadata (12 kB)
+Collecting transformers>=4.28.1 (from -r requirements.txt (line 6))
+  Downloading transformers-4.47.1-py3-none-any.whl.metadata (44 kB)
+Collecting tokenizers>=0.13.3 (from -r requirements.txt (line 7))
+  Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (6.7 kB)
+Collecting sentencepiece (from -r requirements.txt (line 8))
+  Downloading sentencepiece-0.2.0.tar.gz (2.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 16.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting safetensors>=0.4.2 (from -r requirements.txt (line 9))
+  Downloading safetensors-0.4.5-cp313-cp313-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting aiohttp (from -r requirements.txt (line 10))
+  Downloading aiohttp-3.11.11-cp313-cp313-macosx_11_0_arm64.whl.metadata (7.7 kB)
+Collecting pyyaml (from -r requirements.txt (line 11))
+  Downloading PyYAML-6.0.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.1 kB)
+Requirement already satisfied: Pillow in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from -r requirements.txt (line 12)) (11.0.0)
+Collecting scipy (from -r requirements.txt (line 13))
+  Downloading scipy-1.14.1-cp313-cp313-macosx_14_0_arm64.whl.metadata (60 kB)
+Collecting tqdm (from -r requirements.txt (line 14))
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting psutil (from -r requirements.txt (line 15))
+  Downloading psutil-6.1.1-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting kornia>=0.7.1 (from -r requirements.txt (line 18))
+  Downloading kornia-0.7.4-py2.py3-none-any.whl.metadata (18 kB)
+Collecting spandrel (from -r requirements.txt (line 19))
+  Downloading spandrel-0.4.0-py3-none-any.whl.metadata (15 kB)
+Collecting soundfile (from -r requirements.txt (line 20))
+  Downloading soundfile-0.12.1-py2.py3-none-macosx_11_0_arm64.whl.metadata (14 kB)
+Requirement already satisfied: filelock in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (3.16.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (4.12.2)
+Requirement already satisfied: networkx in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (3.4.2)
+Requirement already satisfied: jinja2 in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (3.1.4)
+Requirement already satisfied: fsspec in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (2024.10.0)
+Requirement already satisfied: setuptools in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (75.1.0)
+Requirement already satisfied: sympy==1.13.1 in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torch->-r requirements.txt (line 1)) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from sympy==1.13.1->torch->-r requirements.txt (line 1)) (1.3.0)
+Requirement already satisfied: numpy>=1.19 in /opt/anaconda3/envs/Irian1/lib/python3.13/site-packages (from torchsde->-r requirements.txt (line 2)) (2.1.2)
+Collecting trampoline>=0.1.2 (from torchsde->-r requirements.txt (line 2))
+  Downloading trampoline-0.1.2-py3-none-any.whl.metadata (10 kB)
+Collecting huggingface-hub<1.0,>=0.24.0 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading huggingface_hub-0.27.0-py3-none-any.whl.metadata (13 kB)
+Collecting packaging>=20.0 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting regex!=2019.12.17 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading regex-2024.11.6-cp313-cp313-macosx_11_0_arm64.whl.metadata (40 kB)
+Collecting requests (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting aiohappyeyeballs>=2.3.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl.metadata (6.1 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp->-r requirements.txt (line 10))
+  Downloading aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting attrs>=17.3.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading attrs-24.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp->-r requirements.txt (line 10))
+  Downloading frozenlist-1.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (13 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp->-r requirements.txt (line 10))
+  Downloading multidict-6.1.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.0 kB)
+Collecting propcache>=0.2.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading propcache-0.2.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.2 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading yarl-1.18.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (69 kB)
+Collecting kornia-rs>=0.1.0 (from kornia>=0.7.1->-r requirements.txt (line 18))
+  Downloading kornia_rs-0.1.7.tar.gz (71 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [6 lines of output]
+      
+      Cargo, the Rust package manager, is not installed or is not on PATH.
+      This package requires Rust and Cargo to compile extensions. Install it through
+      the system's package manager or via https://rustup.rs/
+      
+      Checking for Rust toolchain....
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+(Irian1) faith3@MacBookAir ComfyUI % curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust
+programming language, and its package manager, Cargo.
+
+Rustup metadata and toolchains will be installed into the Rustup
+home directory, located at:
+
+  /Users/faith3/.rustup
+
+This can be modified with the RUSTUP_HOME environment variable.
+
+The Cargo home directory is located at:
+
+  /Users/faith3/.cargo
+
+This can be modified with the CARGO_HOME environment variable.
+
+The cargo, rustc, rustup and other commands will be added to
+Cargo's bin directory, located at:
+
+  /Users/faith3/.cargo/bin
+
+This path will then be added to your PATH environment variable by
+modifying the profile files located at:
+
+  /Users/faith3/.profile
+  /Users/faith3/.bash_profile
+  /Users/faith3/.zshenv
+
+You can uninstall at any time with rustup self uninstall and
+these changes will be reverted.
+
+Current installation options:
+
+
+   default host triple: aarch64-apple-darwin
+     default toolchain: stable (default)
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with standard installation (default - just press enter)
+2) Customize installation
+3) Cancel installation
+>1
+
+error: could not amend shell profile: '/Users/faith3/.bash_profile': could not write rcfile file: '/Users/faith3/.bash_profile': Permission denied (os error 13)
+(Irian1) faith3@MacBookAir ComfyUI % sudo chown faith3
+Password:
+usage: chown [-fhnvx] [-R [-H | -L | -P]] owner[:group] file ...
+       chown [-fhnvx] [-R [-H | -L | -P]] :group file ...
+(Irian1) faith3@MacBookAir ComfyUI % sudo chown faith3  ~/.bash_profile
+(Irian1) faith3@MacBookAir ComfyUI % curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust
+programming language, and its package manager, Cargo.
+
+Rustup metadata and toolchains will be installed into the Rustup
+home directory, located at:
+
+  /Users/faith3/.rustup
+
+This can be modified with the RUSTUP_HOME environment variable.
+
+The Cargo home directory is located at:
+
+  /Users/faith3/.cargo
+
+This can be modified with the CARGO_HOME environment variable.
+
+The cargo, rustc, rustup and other commands will be added to
+Cargo's bin directory, located at:
+
+  /Users/faith3/.cargo/bin
+
+This path will then be added to your PATH environment variable by
+modifying the profile files located at:
+
+  /Users/faith3/.profile
+  /Users/faith3/.bash_profile
+  /Users/faith3/.zshenv
+
+You can uninstall at any time with rustup self uninstall and
+these changes will be reverted.
+
+Current installation options:
+
+
+   default host triple: aarch64-apple-darwin
+     default toolchain: stable (default)
+               profile: default
+  modify PATH variable: yes
+
+1) Proceed with standard installation (default - just press enter)
+2) Customize installation
+3) Cancel installation
+>1
+
+info: profile set to 'default'
+info: default host triple is aarch64-apple-darwin
+info: syncing channel updates for 'stable-aarch64-apple-darwin'
+info: latest update on 2024-11-28, rust version 1.83.0 (90b35a623 2024-11-26)
+info: downloading component 'cargo'
+info: downloading component 'clippy'
+info: downloading component 'rust-docs'
+info: downloading component 'rust-std'
+info: downloading component 'rustc'
+info: downloading component 'rustfmt'
+info: installing component 'cargo'
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+ 16.5 MiB /  16.5 MiB (100 %)   1.6 MiB/s in  7s ETA:  0s
+info: installing component 'rust-std'
+ 25.7 MiB /  25.7 MiB (100 %)  11.2 MiB/s in  2s ETA:  0s
+info: installing component 'rustc'
+ 53.1 MiB /  53.1 MiB (100 %)  11.9 MiB/s in  4s ETA:  0s
+info: installing component 'rustfmt'
+info: default toolchain set to 'stable-aarch64-apple-darwin'
+
+  stable-aarch64-apple-darwin installed - rustc 1.83.0 (90b35a623 2024-11-26)
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, you need to source
+the corresponding env file under $HOME/.cargo.
+
+This is usually done by running one of the following (note the leading DOT):
+. "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+source "$HOME/.cargo/env.fish"  # For fish
+(Irian1) faith3@MacBookAir ComfyUI % conda deactivate
+(base) faith3@MacBookAir ComfyUI % conda remove
+
+CondaValueError: no package names supplied,
+       try "conda remove -h" for more details
+
+(base) faith3@MacBookAir ComfyUI % conda remove -n Irian1
+
+CondaValueError: no package names supplied,
+       try "conda remove -h" for more details
+
+(base) faith3@MacBookAir ComfyUI % conda remove -n Irian1 --o
+usage: conda remove [-h] [-n ENVIRONMENT | -p PATH] [-c CHANNEL] [--use-local]
+                    [--override-channels] [--repodata-fn REPODATA_FNS]
+                    [--experimental {jlap,lock}] [--no-lock]
+                    [--repodata-use-zst | --no-repodata-use-zst] [--features]
+                    [--force-remove] [--no-pin] [--solver {classic,libmamba}] [-C] [-k]
+                    [--offline] [--json] [-v] [-q] [-d] [-y] [--all] [--keep-env] [--dev]
+                    [package_name ...]
+conda remove: error: ambiguous option: --o could match --override-channels, --offline
+(base) faith3@MacBookAir ComfyUI % conda remove -n Irian1 --all
+
+Remove all packages in environment /opt/anaconda3/envs/Irian1:
+
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+
+The following packages will be REMOVED:
+
+  asttokens-2.0.5-pyhd3eb1b0_0
+  bzip2-1.0.8-h80987f9_6
+  ca-certificates-2024.11.26-hca03da5_0
+  decorator-5.1.1-pyhd3eb1b0_0
+  executing-0.8.3-pyhd3eb1b0_0
+  expat-2.6.4-h313beb8_0
+  ipython-8.30.0-py313hca03da5_0
+  jedi-0.19.2-py313hca03da5_0
+  libcxx-14.0.6-h848a8c0_0
+  libffi-3.4.4-hca03da5_1
+  libmpdec-4.0.0-h80987f9_0
+  matplotlib-inline-0.1.6-py313hca03da5_0
+  ncurses-6.4-h313beb8_0
+  openssl-3.0.15-h80987f9_0
+  parso-0.8.4-py313hca03da5_0
+  pexpect-4.8.0-pyhd3eb1b0_3
+  pip-24.2-py313hca03da5_0
+  prompt-toolkit-3.0.43-py313hca03da5_0
+  prompt_toolkit-3.0.43-hd3eb1b0_0
+  ptyprocess-0.7.0-pyhd3eb1b0_2
+  pure_eval-0.2.2-pyhd3eb1b0_0
+  pygments-2.15.1-py313hca03da5_1
+  python-3.13.1-h4862095_100_cp313
+  python_abi-3.13-0_cp313
+  readline-8.2-h1a28f6b_0
+  setuptools-75.1.0-py313hca03da5_0
+  six-1.16.0-pyhd3eb1b0_1
+  sqlite-3.45.3-h80987f9_0
+  stack_data-0.2.0-pyhd3eb1b0_0
+  tk-8.6.14-h6ba3021_0
+  traitlets-5.14.3-py313hca03da5_0
+  tzdata-2024b-h04d1e81_0
+  wcwidth-0.2.5-pyhd3eb1b0_0
+  wheel-0.44.0-py313hca03da5_0
+  xz-5.4.6-h80987f9_1
+  zlib-1.2.13-h18a0788_1
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Everything found within the environment (/opt/anaconda3/envs/Irian1), including any conda environment configurations and any non-conda files, will be deleted. Do you wish to continue?
+ (y/[n])? y 
+
+(base) faith3@MacBookAir ComfyUI % conda deactivate
+faith3@MacBookAir ComfyUI % conda config --set auto_activate_base false
+faith3@MacBookAir ComfyUI % conda create -n Irian1                     
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+
+
+Proceed ([y]/n)? n
+
+
+CondaSystemExit: Exiting.
+
+faith3@MacBookAir ComfyUI % conda create -n Irian1 python=3.12
+Channels:
+ - defaults
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/Irian1
+
+  added / updated specs:
+    - python=3.12
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    python-3.12.8              |       h99e199e_0        13.9 MB
+    ------------------------------------------------------------
+                                           Total:        13.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/osx-arm64::bzip2-1.0.8-h80987f9_6 
+  ca-certificates    pkgs/main/osx-arm64::ca-certificates-2024.11.26-hca03da5_0 
+  expat              pkgs/main/osx-arm64::expat-2.6.4-h313beb8_0 
+  libcxx             pkgs/main/osx-arm64::libcxx-14.0.6-h848a8c0_0 
+  libffi             pkgs/main/osx-arm64::libffi-3.4.4-hca03da5_1 
+  ncurses            pkgs/main/osx-arm64::ncurses-6.4-h313beb8_0 
+  openssl            pkgs/main/osx-arm64::openssl-3.0.15-h80987f9_0 
+  pip                pkgs/main/osx-arm64::pip-24.2-py312hca03da5_0 
+  python             pkgs/main/osx-arm64::python-3.12.8-h99e199e_0 
+  readline           pkgs/main/osx-arm64::readline-8.2-h1a28f6b_0 
+  setuptools         pkgs/main/osx-arm64::setuptools-75.1.0-py312hca03da5_0 
+  sqlite             pkgs/main/osx-arm64::sqlite-3.45.3-h80987f9_0 
+  tk                 pkgs/main/osx-arm64::tk-8.6.14-h6ba3021_0 
+  tzdata             pkgs/main/noarch::tzdata-2024b-h04d1e81_0 
+  wheel              pkgs/main/osx-arm64::wheel-0.44.0-py312hca03da5_0 
+  xz                 pkgs/main/osx-arm64::xz-5.4.6-h80987f9_1 
+  zlib               pkgs/main/osx-arm64::zlib-1.2.13-h18a0788_1 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                           
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate Irian1
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+faith3@MacBookAir ComfyUI % conda activate Irian1         
+(Irian1) faith3@MacBookAir ComfyUI %    pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+Looking in indexes: https://download.pytorch.org/whl/nightly/cpu
+Collecting torch
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torch-2.6.0.dev20241220-cp312-none-macosx_11_0_arm64.whl (66.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.6/66.6 MB 45.5 MB/s eta 0:00:00
+Collecting torchvision
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torchvision-0.22.0.dev20241220-cp312-cp312-macosx_11_0_arm64.whl (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 53.3 MB/s eta 0:00:00
+Collecting torchaudio
+  Downloading https://download.pytorch.org/whl/nightly/cpu/torchaudio-2.6.0.dev20241220-cp312-cp312-macosx_11_0_arm64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 57.6 MB/s eta 0:00:00
+Collecting filelock (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/filelock-3.16.1-py3-none-any.whl (16 kB)
+Collecting typing-extensions>=4.10.0 (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Collecting networkx (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Collecting jinja2 (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/jinja2-3.1.4-py3-none-any.whl (133 kB)
+Collecting fsspec (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/fsspec-2024.10.0-py3-none-any.whl (179 kB)
+Requirement already satisfied: setuptools in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch) (75.1.0)
+Collecting sympy==1.13.1 (from torch)
+  Using cached https://download.pytorch.org/whl/nightly/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch)
+  Using cached https://download.pytorch.org/whl/nightly/mpmath-1.3.0-py3-none-any.whl (536 kB)
+Collecting numpy (from torchvision)
+  Downloading https://download.pytorch.org/whl/nightly/numpy-2.1.2-cp312-cp312-macosx_14_0_arm64.whl (5.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 43.8 MB/s eta 0:00:00
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Downloading https://download.pytorch.org/whl/nightly/pillow-11.0.0-cp312-cp312-macosx_11_0_arm64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 45.8 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Downloading https://download.pytorch.org/whl/nightly/MarkupSafe-2.1.5-cp312-cp312-macosx_10_9_universal2.whl (18 kB)
+Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision, torchaudio
+Successfully installed MarkupSafe-2.1.5 filelock-3.16.1 fsspec-2024.10.0 jinja2-3.1.4 mpmath-1.3.0 networkx-3.4.2 numpy-2.1.2 pillow-11.0.0 sympy-1.13.1 torch-2.6.0.dev20241220 torchaudio-2.6.0.dev20241220 torchvision-0.22.0.dev20241220 typing-extensions-4.12.2
+(Irian1) faith3@MacBookAir ComfyUI %    pip install -r requirements.txt
+Requirement already satisfied: torch in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (2.6.0.dev20241220)
+Collecting torchsde (from -r requirements.txt (line 2))
+  Using cached torchsde-0.2.6-py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: torchvision in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.22.0.dev20241220)
+Requirement already satisfied: torchaudio in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (2.6.0.dev20241220)
+Collecting einops (from -r requirements.txt (line 5))
+  Using cached einops-0.8.0-py3-none-any.whl.metadata (12 kB)
+Collecting transformers>=4.28.1 (from -r requirements.txt (line 6))
+  Using cached transformers-4.47.1-py3-none-any.whl.metadata (44 kB)
+Collecting tokenizers>=0.13.3 (from -r requirements.txt (line 7))
+  Using cached tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (6.7 kB)
+Collecting sentencepiece (from -r requirements.txt (line 8))
+  Downloading sentencepiece-0.2.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (7.7 kB)
+Collecting safetensors>=0.4.2 (from -r requirements.txt (line 9))
+  Downloading safetensors-0.4.5-cp312-cp312-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting aiohttp (from -r requirements.txt (line 10))
+  Downloading aiohttp-3.11.11-cp312-cp312-macosx_11_0_arm64.whl.metadata (7.7 kB)
+Collecting pyyaml (from -r requirements.txt (line 11))
+  Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.1 kB)
+Requirement already satisfied: Pillow in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (11.0.0)
+Collecting scipy (from -r requirements.txt (line 13))
+  Downloading scipy-1.14.1-cp312-cp312-macosx_14_0_arm64.whl.metadata (60 kB)
+Collecting tqdm (from -r requirements.txt (line 14))
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting psutil (from -r requirements.txt (line 15))
+  Using cached psutil-6.1.1-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting kornia>=0.7.1 (from -r requirements.txt (line 18))
+  Using cached kornia-0.7.4-py2.py3-none-any.whl.metadata (18 kB)
+Collecting spandrel (from -r requirements.txt (line 19))
+  Using cached spandrel-0.4.0-py3-none-any.whl.metadata (15 kB)
+Collecting soundfile (from -r requirements.txt (line 20))
+  Using cached soundfile-0.12.1-py2.py3-none-macosx_11_0_arm64.whl.metadata (14 kB)
+Requirement already satisfied: filelock in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (3.16.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (4.12.2)
+Requirement already satisfied: networkx in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (3.4.2)
+Requirement already satisfied: jinja2 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (3.1.4)
+Requirement already satisfied: fsspec in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (2024.10.0)
+Requirement already satisfied: setuptools in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (75.1.0)
+Requirement already satisfied: sympy==1.13.1 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torch->-r requirements.txt (line 1)) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from sympy==1.13.1->torch->-r requirements.txt (line 1)) (1.3.0)
+Requirement already satisfied: numpy>=1.19 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from torchsde->-r requirements.txt (line 2)) (2.1.2)
+Collecting trampoline>=0.1.2 (from torchsde->-r requirements.txt (line 2))
+  Using cached trampoline-0.1.2-py3-none-any.whl.metadata (10 kB)
+Collecting huggingface-hub<1.0,>=0.24.0 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Using cached huggingface_hub-0.27.0-py3-none-any.whl.metadata (13 kB)
+Collecting packaging>=20.0 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting regex!=2019.12.17 (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading regex-2024.11.6-cp312-cp312-macosx_11_0_arm64.whl.metadata (40 kB)
+Collecting requests (from transformers>=4.28.1->-r requirements.txt (line 6))
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting aiohappyeyeballs>=2.3.0 (from aiohttp->-r requirements.txt (line 10))
+  Using cached aiohappyeyeballs-2.4.4-py3-none-any.whl.metadata (6.1 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp->-r requirements.txt (line 10))
+  Using cached aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting attrs>=17.3.0 (from aiohttp->-r requirements.txt (line 10))
+  Using cached attrs-24.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp->-r requirements.txt (line 10))
+  Downloading frozenlist-1.5.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (13 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp->-r requirements.txt (line 10))
+  Downloading multidict-6.1.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (5.0 kB)
+Collecting propcache>=0.2.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading propcache-0.2.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.2 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp->-r requirements.txt (line 10))
+  Downloading yarl-1.18.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (69 kB)
+Collecting kornia-rs>=0.1.0 (from kornia>=0.7.1->-r requirements.txt (line 18))
+  Downloading kornia_rs-0.1.7-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting cffi>=1.0 (from soundfile->-r requirements.txt (line 20))
+  Using cached cffi-1.17.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0->soundfile->-r requirements.txt (line 20))
+  Using cached pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Collecting idna>=2.0 (from yarl<2.0,>=1.17.0->aiohttp->-r requirements.txt (line 10))
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/anaconda3/envs/Irian1/lib/python3.12/site-packages (from jinja2->torch->-r requirements.txt (line 1)) (2.1.5)
+Collecting charset-normalizer<4,>=2 (from requests->transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading charset_normalizer-3.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (34 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests->transformers>=4.28.1->-r requirements.txt (line 6))
+  Downloading certifi-2024.12.14-py3-none-any.whl.metadata (2.3 kB)
+Downloading torchsde-0.2.6-py3-none-any.whl (61 kB)
+Downloading einops-0.8.0-py3-none-any.whl (43 kB)
+Downloading transformers-4.47.1-py3-none-any.whl (10.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 50.7 MB/s eta 0:00:00
+Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 31.0 MB/s eta 0:00:00
+Downloading sentencepiece-0.2.0-cp312-cp312-macosx_11_0_arm64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 56.1 MB/s eta 0:00:00
+Downloading safetensors-0.4.5-cp312-cp312-macosx_11_0_arm64.whl (381 kB)
+Downloading aiohttp-3.11.11-cp312-cp312-macosx_11_0_arm64.whl (455 kB)
+Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Downloading scipy-1.14.1-cp312-cp312-macosx_14_0_arm64.whl (23.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.1/23.1 MB 15.1 MB/s eta 0:00:00
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+Downloading psutil-6.1.1-cp36-abi3-macosx_11_0_arm64.whl (248 kB)
+Downloading kornia-0.7.4-py2.py3-none-any.whl (899 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 899.4/899.4 kB 14.0 MB/s eta 0:00:00
+Downloading spandrel-0.4.0-py3-none-any.whl (297 kB)
+Downloading soundfile-0.12.1-py2.py3-none-macosx_11_0_arm64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 16.9 MB/s eta 0:00:00
+Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl (14 kB)
+Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Downloading attrs-24.3.0-py3-none-any.whl (63 kB)
+Using cached cffi-1.17.1-cp312-cp312-macosx_11_0_arm64.whl (178 kB)
+Downloading frozenlist-1.5.0-cp312-cp312-macosx_11_0_arm64.whl (51 kB)
+Downloading huggingface_hub-0.27.0-py3-none-any.whl (450 kB)
+Downloading kornia_rs-0.1.7-cp312-cp312-macosx_11_0_arm64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 18.4 MB/s eta 0:00:00
+Downloading multidict-6.1.0-cp312-cp312-macosx_11_0_arm64.whl (29 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading propcache-0.2.1-cp312-cp312-macosx_11_0_arm64.whl (45 kB)
+Downloading regex-2024.11.6-cp312-cp312-macosx_11_0_arm64.whl (284 kB)
+Downloading trampoline-0.1.2-py3-none-any.whl (5.2 kB)
+Downloading yarl-1.18.3-cp312-cp312-macosx_11_0_arm64.whl (92 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading certifi-2024.12.14-py3-none-any.whl (164 kB)
+Downloading charset_normalizer-3.4.0-cp312-cp312-macosx_11_0_arm64.whl (119 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Using cached pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: trampoline, sentencepiece, urllib3, tqdm, scipy, safetensors, regex, pyyaml, pycparser, psutil, propcache, packaging, multidict, kornia-rs, idna, frozenlist, einops, charset-normalizer, certifi, attrs, aiohappyeyeballs, yarl, requests, cffi, aiosignal, torchsde, soundfile, kornia, huggingface-hub, aiohttp, tokenizers, spandrel, transformers
+Successfully installed aiohappyeyeballs-2.4.4 aiohttp-3.11.11 aiosignal-1.3.2 attrs-24.3.0 certifi-2024.12.14 cffi-1.17.1 charset-normalizer-3.4.0 einops-0.8.0 frozenlist-1.5.0 huggingface-hub-0.27.0 idna-3.10 kornia-0.7.4 kornia-rs-0.1.7 multidict-6.1.0 packaging-24.2 propcache-0.2.1 psutil-6.1.1 pycparser-2.22 pyyaml-6.0.2 regex-2024.11.6 requests-2.32.3 safetensors-0.4.5 scipy-1.14.1 sentencepiece-0.2.0 soundfile-0.12.1 spandrel-0.4.0 tokenizers-0.21.0 torchsde-0.2.6 tqdm-4.67.1 trampoline-0.1.2 transformers-4.47.1 urllib3-2.2.3 yarl-1.18.3
+(Irian1) faith3@MacBookAir ComfyUI % ipython import torch
+if torch.backends.mps.is_available():
+    mps_device = torch.device("mps")
+    x = torch.ones(1, device=mps_device)
+    print (x)
+else:
+    print ("MPS device not found.")
+if> 
+(Irian1) faith3@MacBookAir ComfyUI % ipython import torch
+if torch.backends.mps.is_available():
+    mps_device = torch.device("mps")
+    x = torch.ones(1, device=mps_device)
+    print (x)
+else:
+    print ("MPS device not found.")
+(Irian1) faith3@MacBookAir ComfyUI % ipython
+zsh: command not found: ipython
+(Irian1) faith3@MacBookAir ComfyUI % import torch
+if torch.backends.mps.is_available():
+    mps_device = torch.device("mps")
+    x = torch.ones(1, device=mps_device)
+    print (x)
+else:
+    print ("MPS device not found.")
+if>  
+(Irian1) faith3@MacBookAir ComfyUI % pip install ipython               
+Collecting ipython
+  Downloading ipython-8.31.0-py3-none-any.whl.metadata (4.9 kB)
+Collecting decorator (from ipython)
+  Downloading decorator-5.1.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting jedi>=0.16 (from ipython)
+  Downloading jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting matplotlib-inline (from ipython)
+  Downloading matplotlib_inline-0.1.7-py3-none-any.whl.metadata (3.9 kB)
+Collecting pexpect>4.3 (from ipython)
+  Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython)
+  Downloading prompt_toolkit-3.0.48-py3-none-any.whl.metadata (6.4 kB)
+Collecting pygments>=2.4.0 (from ipython)
+  Downloading pygments-2.18.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting stack_data (from ipython)
+  Downloading stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting traitlets>=5.13.0 (from ipython)
+  Downloading traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.16->ipython)
+  Downloading parso-0.8.4-py2.py3-none-any.whl.metadata (7.7 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython)
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting wcwidth (from prompt_toolkit<3.1.0,>=3.0.41->ipython)
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl.metadata (14 kB)
+Collecting executing>=1.2.0 (from stack_data->ipython)
+  Downloading executing-2.1.0-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting asttokens>=2.1.0 (from stack_data->ipython)
+  Downloading asttokens-3.0.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting pure-eval (from stack_data->ipython)
+  Downloading pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+Downloading ipython-8.31.0-py3-none-any.whl (821 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 821.6/821.6 kB 23.6 MB/s eta 0:00:00
+Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 43.8 MB/s eta 0:00:00
+Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Downloading prompt_toolkit-3.0.48-py3-none-any.whl (386 kB)
+Downloading pygments-2.18.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 39.1 MB/s eta 0:00:00
+Downloading traitlets-5.14.3-py3-none-any.whl (85 kB)
+Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Downloading matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Downloading asttokens-3.0.0-py3-none-any.whl (26 kB)
+Downloading executing-2.1.0-py2.py3-none-any.whl (25 kB)
+Downloading parso-0.8.4-py2.py3-none-any.whl (103 kB)
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Downloading pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, pure-eval, ptyprocess, traitlets, pygments, prompt_toolkit, pexpect, parso, executing, decorator, asttokens, stack_data, matplotlib-inline, jedi, ipython
+Successfully installed asttokens-3.0.0 decorator-5.1.1 executing-2.1.0 ipython-8.31.0 jedi-0.19.2 matplotlib-inline-0.1.7 parso-0.8.4 pexpect-4.9.0 prompt_toolkit-3.0.48 ptyprocess-0.7.0 pure-eval-0.2.3 pygments-2.18.0 stack_data-0.6.3 traitlets-5.14.3 wcwidth-0.2.13
+(Irian1) faith3@MacBookAir ComfyUI % ipython             
+Python 3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 10:37:40) [Clang 14.0.6 ]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.31.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import torch
+   ...: if torch.backends.mps.is_available():
+   ...:     mps_device = torch.device("mps")
+   ...:     x = torch.ones(1, device=mps_device)
+   ...:     print (x)
+   ...: else:
+   ...:     print ("MPS device not found.")
+   ...: 
+tensor([1.], device='mps:0')
+
+In [2]: 
+
+In [2]:                                                                                    
+Do you really want to exit ([y]/n)? y
+(Irian1) faith3@MacBookAir ComfyUI % python main.py
+Traceback (most recent call last):
+  File "/Users/faith3/Desktop/DATA1/Irian1/ComfyUI/main.py", line 97, in <module>
+    import Irian1.ComfyUI.execution as execution
+ModuleNotFoundError: No module named 'Irian1'
+(Irian1) faith3@MacBookAir ComfyUI % git status
+On branch master
+Your branch is behind 'origin/master' by 52 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   main.py
+	modified:   server.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Osen Mac-Iriase - Office hours | Microsoft Teams.html
+	execution_/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(Irian1) faith3@MacBookAir ComfyUI % git diff
+diff --git a/main.py b/main.py
+index 87ce1526..3545bd82 100644
+--- a/main.py
++++ b/main.py
+@@ -87,14 +87,14 @@ if __name__ == "__main__":
+ 
+ if args.windows_standalone_build:
+     try:
+-        from fix_torch import fix_pytorch_libomp
++        from Irian1.ComfyUI.fix_torch import fix_pytorch_libomp
+         fix_pytorch_libomp()
+     except:
+         pass
+         pass
+ 
+ import comfy.utils
+ 
+-import execution
++import execution as execution
+ import server
+ from server import BinaryEventTypes
+ import nodes
+diff --git a/server.py b/server.py
+index 5e86558d..4b20fce7 100644
+--- a/server.py
++++ b/server.py
+@@ -5,7 +5,7 @@ import traceback
+ 
+ import nodes
+ import folder_paths
+-import execution
++import Irian1.ComfyUI.execution as execution
+ import uuid
+ import urllib
+ import json
+(END)
+ 
+ import comfy.utils
+ 
+-import execution
++import execution as execution
+ import server
+ from server import BinaryEventTypes
+ import nodes
+diff --git a/server.py b/server.py
+index 5e86558d..4b20fce7 100644
+--- a/server.py
++++ b/server.py
+@@ -5,7 +5,7 @@ import traceback
+ 
+ import nodes
+ import folder_paths
+-import execution
++import Irian1.ComfyUI.execution as execution
+ import uuid
+ import urllib
+ import json
+(END)
+ 
+ import comfy.utils
+ 
+-import execution
++import execution as execution
+ import server
+ from server import BinaryEventTypes
+ import nodes
+diff --git a/server.py b/server.py
+index 5e86558d..4b20fce7 100644
+--- a/server.py
++++ b/server.py
+@@ -5,7 +5,7 @@ import traceback
+ 
+ import nodes
+ import folder_paths
+-import execution
++import Irian1.ComfyUI.execution as execution
+ import uuid
+ import urllib
+ import json
+
+(Irian1) faith3@MacBookAir ComfyUI % git status 
+On branch master
+Your branch is behind 'origin/master' by 52 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   main.py
+	modified:   server.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Osen Mac-Iriase - Office hours | Microsoft Teams.html
+	execution_/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(Irian1) faith3@MacBookAir ComfyUI % git checkout -- main.py server.py 
+(Irian1) faith3@MacBookAir ComfyUI % python main.py 
+Total VRAM 8192 MB, total RAM 8192 MB
+pytorch version: 2.6.0.dev20241220
+Set vram state to: SHARED
+Device: mps
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+****** User settings have been changed to be stored on the server instead of browser storage. ******
+****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+[Prompt Server] web root: /Users/faith3/Desktop/DATA1/Irian1/ComfyUI/web
+
+Import times for custom nodes:
+   0.0 seconds: /Users/faith3/Desktop/DATA1/Irian1/ComfyUI/custom_nodes/websocket_image_save.py
+
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+
+
+ctrl r to search
