@@ -11,9 +11,13 @@ I seek to answer questions such as:
 - How do students’ study habits change with different listening environments?
 
 ## Technologies Used
--Python (pandas, matplotlib, seaborn, plotly) – for data analysis and visualization
--Google Forms / Sheets – for data collection and organization
--Jupyter Notebook / VS Code – for analysis and exploration
+- Python (pandas, matplotlib, seaborn, plotly) – for data analysis and visualization
+- Google Forms / Sheets – for data collection and organization
+- Jupyter Notebook / VS Code – for analysis and exploration
 
 ### Link to Form:
 https://forms.gle/X2zwHQ5AX7S3KquV8
+
+## Acknowledgemts
+Thank you to everyone who participated in the survey and shared honest feedback!
+Your input is essential to understanding how we can make studying more effective and enjoyable through the right sound environment.
